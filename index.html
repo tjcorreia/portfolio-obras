@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" id="html-root">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portefólio de Obras - Tiago Correia | Engenheiro Civil</title>
+  <title data-en="Construction Portfolio - Tiago Correia | Civil Engineer">Portefólio de Obras - Tiago Correia | Engenheiro Civil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<button class="print-btn" onclick="exportPDF()">⬇ Exportar PDF</button>
+<div class="lang-switch" id="langSwitch">
+  <button type="button" class="lang-btn" data-lang-btn="pt" onclick="setLanguage('pt', true)">PT</button>
+  <button type="button" class="lang-btn" data-lang-btn="en" onclick="setLanguage('en', true)">EN</button>
+</div>
+
+<button class="print-btn" onclick="exportPDF()" data-en="⬇ Export PDF">⬇ Exportar PDF</button>
 
 <!-- ============================================================
      HEADER
@@ -16,10 +21,10 @@
 <header>
   <div class="header-inner">
     <h1>Tiago Correia</h1>
-    <p class="subtitle">Engenheiro Civil &nbsp;|&nbsp; Diretor de Obra &nbsp;|&nbsp; Fiscal de Obra</p>
+    <p class="subtitle" data-en="Civil Engineer &nbsp;|&nbsp; Construction Manager &nbsp;|&nbsp; Site Supervisor">Engenheiro Civil &nbsp;|&nbsp; Diretor de Obra &nbsp;|&nbsp; Fiscal de Obra</p>
     <div class="header-badges">
-      <span class="header-badge">Membro da Ordem dos Engenheiros</span>
-      <span class="header-badge">Licenciatura Eng. Civil - FCTUC, Univ. Coimbra</span>
+      <span class="header-badge" data-en="Member of the Portuguese Order of Engineers">Membro da Ordem dos Engenheiros</span>
+      <span class="header-badge" data-en="Civil Engineering Degree - FCTUC, Univ. of Coimbra">Licenciatura Eng. Civil - FCTUC, Univ. Coimbra</span>
       <span class="header-badge">ERASMUS - Silesian University of Technology</span>
     </div>
     <nav class="main-nav">
@@ -40,23 +45,23 @@
   <div class="stats-grid">
     <div class="stat">
       <span class="stat-value">20+</span>
-      <span class="stat-label">Anos de Experiência</span>
+      <span class="stat-label" data-en="Years of Experience">Anos de Experiência</span>
     </div>
     <div class="stat">
       <span class="stat-value">7</span>
-      <span class="stat-label">Países</span>
+      <span class="stat-label" data-en="Countries">Países</span>
     </div>
     <div class="stat">
       <span class="stat-value">8</span>
-      <span class="stat-label">Obras Wärtsilä</span>
+      <span class="stat-label" data-en="Wärtsilä Projects">Obras Wärtsilä</span>
     </div>
     <div class="stat">
       <span class="stat-value">204M€</span>
-      <span class="stat-label">Maior Obra</span>
+      <span class="stat-label" data-en="Largest Project">Maior Obra</span>
     </div>
     <div class="stat">
       <span class="stat-value">CYPE</span>
-      <span class="stat-label">Dimensionamento Estrutural</span>
+      <span class="stat-label" data-en="Structural Design">Dimensionamento Estrutural</span>
     </div>
   </div>
 </div>
@@ -72,10 +77,10 @@
   <section id="vhm" class="employer-section">
     <div class="employer-header">
       <h2>VHM</h2>
-      <span class="employer-period">Jun 2017 - Set 2018 &nbsp;|&nbsp; Portugal</span>
-      <span class="employer-role">Fiscal de Obra</span>
+      <span class="employer-period" data-en="Jun 2017 - Sep 2018 | Portugal">Jun 2017 - Set 2018 &nbsp;|&nbsp; Portugal</span>
+      <span class="employer-role" data-en="Site Supervisor">Fiscal de Obra</span>
     </div>
-    <p class="employer-intro">
+    <p class="employer-intro" data-en="Supervision of water infrastructure works and refurbishment of commercial and hospital spaces.">
       Fiscalização de obras de infraestrutura hídrica e reabilitação de espaços comerciais e hospitalares.
     </p>
 
@@ -106,14 +111,14 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">ETARs de Ílhavo e Coimbrão</p>
-          <p class="card-location">Ílhavo <a href="https://maps.app.goo.gl/2Z6Huf2VQSe98v1A7" target="_blank" rel="noopener noreferrer" class="map-link" title="ETAR Ílhavo"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a> e Coimbrão <a href="https://maps.app.goo.gl/5sGZN4LE1pNqRuqb6" target="_blank" rel="noopener noreferrer" class="map-link" title="ETAR Coimbrão"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>, Portugal</p>
+          <p class="card-title" data-en="Ílhavo and Coimbrão WWTPs">ETARs de Ílhavo e Coimbrão</p>
+          <p class="card-location">Ílhavo <a href="https://maps.app.goo.gl/2Z6Huf2VQSe98v1A7" target="_blank" rel="noopener noreferrer" class="map-link" title="ETAR Ílhavo"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a> <span data-en="and">e</span> Coimbrão <a href="https://maps.app.goo.gl/5sGZN4LE1pNqRuqb6" target="_blank" rel="noopener noreferrer" class="map-link" title="ETAR Coimbrão"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a>, Portugal</p>
           <div class="card-pills">
-            <span class="pill pill-water">Água e Saneamento</span>
-            <span class="pill pill-water">ETAR</span>
+            <span class="pill pill-water" data-en="Water &amp; Sanitation">Água e Saneamento</span>
+            <span class="pill pill-water" data-en="WWTP">ETAR</span>
           </div>
-          <p class="card-client">Cliente: Águas do Centro Litoral</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: Águas do Centro Litoral">Cliente: Águas do Centro Litoral</p>
+          <p class="card-desc" data-en="Supervision of the replacement of stainless-steel biogas piping with HDPE piping in two wastewater treatment plants in full operation.">
             Fiscalização da substituição de tubagens de aço inox de biogás por tubagens PEAD
             em duas estações de tratamento de águas residuais em plena operação.
           </p>
@@ -138,9 +143,9 @@
           <p class="card-title">Hospital CUF Coimbra</p>
           <p class="card-location">Coimbra, Portugal <a href="https://maps.app.goo.gl/Dn4Rg5EuZZrzZxXVA" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
-            <span class="pill pill-rehab">Reabilitação</span>
+            <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
           </div>
-          <p class="card-desc">
+          <p class="card-desc" data-en="Supervision of the conversion of rooms to accommodate radiology equipment.">
             Fiscalização da conversão de salas para comportar equipamentos de radiologia.
           </p>
         </div>
@@ -170,9 +175,9 @@
           <p class="card-title">Fórum de Aveiro (FNAC)</p>
           <p class="card-location">Aveiro, Portugal <a href="https://maps.app.goo.gl/vsoJTwF6hX27pYSR7" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
-            <span class="pill pill-rehab">Reabilitação</span>
+            <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
           </div>
-          <p class="card-desc">
+          <p class="card-desc" data-en="Supervision of the conversion of the former cinema halls at the Fórum de Aveiro shopping centre into a new FNAC store.">
             Fiscalização da conversão das antigas salas de cinema do centro comercial
             Fórum de Aveiro para nova loja FNAC.
           </p>
@@ -190,7 +195,7 @@
     <div class="employer-header">
       <h2>Condomínio da Torricentro</h2>
       <span class="employer-period">Jun 2016 - Jun 2017 &nbsp;|&nbsp; Quiaios, Portugal</span>
-      <span class="employer-role">Fiscal de Obra</span>
+      <span class="employer-role" data-en="Site Supervisor">Fiscal de Obra</span>
     </div>
 
     <div class="projects-grid">
@@ -222,10 +227,10 @@
           <p class="card-title">Condomínio Torricentro</p>
           <p class="card-location">Quiaios, Portugal <a href="https://maps.app.goo.gl/LdDn6Zn4FEV5Pyii9" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
-            <span class="pill pill-rehab">Reabilitação</span>
+            <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
           </div>
-          <p class="card-client">Cliente: Condomínio da Torricentro, Quiaios</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: Condomínio da Torricentro, Quiaios">Cliente: Condomínio da Torricentro, Quiaios</p>
+          <p class="card-desc" data-en="Exterior refurbishment of a 36-apartment condominium: painting and repair of flooring and façades in common areas.">
             Reabilitação exterior de condomínio com 36 apartamentos: pintura e reparação
             de pisos e fachadas de zonas comuns.
           </p>
@@ -242,10 +247,10 @@
   <section id="wartsilä" class="employer-section">
     <div class="employer-header">
       <h2>Wärtsilä Corporation &nbsp;/&nbsp; Citec Engineering</h2>
-      <span class="employer-period">Jul 2008 - Mai 2016 &nbsp;|&nbsp; Internacional (7 países)</span>
+      <span class="employer-period" data-en="Jul 2008 - May 2016 | International (7 countries)">Jul 2008 - Mai 2016 &nbsp;|&nbsp; Internacional (7 países)</span>
       <span class="employer-role">Site Engineer &gt; Civil Supervisor &gt; Construction Manager</span>
     </div>
-    <p class="employer-intro">
+    <p class="employer-intro" data-en="Supervision and management of civil works on large-scale thermoelectric power plants for Wärtsilä Corporation. Structures: steel pavilions with sandwich panels, tanks on concrete bases with steel structures, reinforced concrete and masonry buildings. Progressed from Site Engineer (deputy construction manager) to Civil Supervisor (civil works supervisor) to Construction Manager.">
       Supervisão e direção de obras civis em centrais termoelétricas de grande escala para a Wärtsilä Corporation.
       Estruturas: pavilhões metálicos com painel sandwich, reservatórios com base de betão e estrutura metálica, edifícios em betão armado e alvenaria.
       Progressão de Site Engineer (adjunto de diretor de obra) para Civil Supervisor (fiscal da obra civil) para Construction Manager (diretor de obra).
@@ -280,24 +285,24 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Central Termoelétrica - Lote 8</p>
-          <p class="card-location">Trompeteros, Amazónia Peruana, Peru &nbsp;|&nbsp; Jul - Dez 2008 <a href="https://maps.app.goo.gl/ijWH9n7GmkWK2aEK7" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Thermoelectric Power Plant - Lot 8">Central Termoelétrica - Lote 8</p>
+          <p class="card-location">Trompeteros, <span data-en="Peruvian Amazon">Amazónia Peruana</span>, Peru &nbsp;|&nbsp; <span data-en="Jul - Dec 2008">Jul - Dez 2008</span> <a href="https://maps.app.goo.gl/ijWH9n7GmkWK2aEK7" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: PlusPetrol Norte</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: PlusPetrol Norte">Dono de Obra: PlusPetrol Norte</p>
+          <p class="card-desc" data-en="Construction of an 18MW HFO power plant with 3 Wärtsilä 18V32DF engines. Includes main pavilion, tanks, WWTP, administrative and auxiliary buildings, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Construção de central de 18MW a HFO com 3 motores Wärtsilä 18V32DF. Inclui
             pavilhão principal, reservatórios, ETAR, edifícios administrativos e auxiliares,
             acessos e arranjos exteriores. Pavilhões em estrutura metálica com painel sandwich;
             reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">16,76M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">12.000m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">18MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Site Engineer</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">16,76M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">12.000m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">18MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Site Engineer</span></div>
           </div>
         </div>
       </div>
@@ -333,24 +338,24 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Central Termoelétrica - Lote 1AB</p>
-          <p class="card-location">Andoas, Amazónia Peruana, Peru &nbsp;|&nbsp; Jan - Jun 2009 <a href="https://maps.app.goo.gl/znuNhjuMqGcypjj36" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Thermoelectric Power Plant - Lot 1AB">Central Termoelétrica - Lote 1AB</p>
+          <p class="card-location">Andoas, <span data-en="Peruvian Amazon">Amazónia Peruana</span>, Peru &nbsp;|&nbsp; <span data-en="Jan - Jun 2009">Jan - Jun 2009</span> <a href="https://maps.app.goo.gl/znuNhjuMqGcypjj36" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: PlusPetrol Norte</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: PlusPetrol Norte">Dono de Obra: PlusPetrol Norte</p>
+          <p class="card-desc" data-en="Construction of a 45MW HFO power plant with 4 Wärtsilä 18V32A engines. Includes main pavilion, tanks, WWTP, administrative and auxiliary buildings, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Construção de central de 45MW a HFO com 4 motores Wärtsilä 18V32A. Inclui
             pavilhão principal, reservatórios, ETAR, edifícios administrativos e auxiliares,
             acessos e arranjos exteriores. Pavilhões em estrutura metálica com painel sandwich;
             reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">40,15M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">18.000m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">45MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Site Engineer</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">40,15M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">18.000m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">45MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Site Engineer</span></div>
           </div>
         </div>
       </div>
@@ -389,24 +394,24 @@
         </div>
         <div class="card-body">
           <p class="card-title">Central Térmica da Vitória III (CTV III)</p>
-          <p class="card-location">Funchal, Madeira, Portugal &nbsp;|&nbsp; Jul 2009 - Abr 2011 <a href="https://maps.app.goo.gl/iKj4mm6cZLPZPcjj8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-location">Funchal, Madeira, Portugal &nbsp;|&nbsp; <span data-en="Jul 2009 - Apr 2011">Jul 2009 - Abr 2011</span> <a href="https://maps.app.goo.gl/iKj4mm6cZLPZPcjj8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
-            <span class="pill pill-struct">Cais Marítimo</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Maritime Jetty">Cais Marítimo</span>
           </div>
-          <p class="card-client">Dono de Obra: EDM - Empresa de Electricidade da Madeira</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: EDM - Empresa de Electricidade da Madeira">Dono de Obra: EDM - Empresa de Electricidade da Madeira</p>
+          <p class="card-desc" data-en="Expansion of a 51MW power plant with 4 Wärtsilä 18V50DF engines and 1 Peter Brotherhood turbine. Includes main pavilion, tanks, auxiliary buildings, maritime jetty, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Ampliação de central de 51MW com 4 motores Wärtsilä 18V50DF e 1 turbina Peter Brotherhood.
             Inclui pavilhão principal, reservatórios, edifícios auxiliares, cais marítimo,
             acessos e arranjos exteriores. Pavilhões em estrutura metálica com painel sandwich;
             reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">50,35M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">8.100m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">51MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Civil Supervisor</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">50,35M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">8.100m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">51MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Civil Supervisor</span></div>
           </div>
         </div>
       </div>
@@ -430,23 +435,23 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Central Elétrica de Palmarejo (22MW)</p>
-          <p class="card-location">Praia, Santiago, Cabo Verde &nbsp;|&nbsp; Mai 2011 - Dez 2012 <a href="https://maps.app.goo.gl/h1f8r954DYXYHDAZ8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Palmarejo Power Plant (22MW)">Central Elétrica de Palmarejo (22MW)</p>
+          <p class="card-location">Praia, Santiago, <span data-en="Cape Verde">Cabo Verde</span> &nbsp;|&nbsp; <span data-en="May 2011 - Dec 2012">Mai 2011 - Dez 2012</span> <a href="https://maps.app.goo.gl/h1f8r954DYXYHDAZ8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: Governo de Cabo Verde</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: Government of Cape Verde">Dono de Obra: Governo de Cabo Verde</p>
+          <p class="card-desc" data-en="Expansion of a 22MW power plant with 2 Wärtsilä 12V46 engines. Includes main pavilion, tanks, auxiliary buildings, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Ampliação de central de 22MW com 2 motores Wärtsilä 12V46. Inclui pavilhão principal,
             reservatórios, edifícios auxiliares, acessos e arranjos exteriores.
             Pavilhões em estrutura metálica com painel sandwich; reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">22,50M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">37.500m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">22MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Civil Supervisor</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">22,50M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">37.500m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">22MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Civil Supervisor</span></div>
           </div>
         </div>
       </div>
@@ -466,23 +471,23 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Central Elétrica PG2 de Total</p>
-          <p class="card-location">Port-Gentil, Gabão &nbsp;|&nbsp; Jan - Mar 2013 <a href="https://maps.app.goo.gl/xM1oJBSn75PnREdy6" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Total PG2 Power Plant">Central Elétrica PG2 de Total</p>
+          <p class="card-location">Port-Gentil, <span data-en="Gabon">Gabão</span> &nbsp;|&nbsp; <span data-en="Jan - Mar 2013">Jan - Mar 2013</span> <a href="https://maps.app.goo.gl/xM1oJBSn75PnREdy6" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: TOTAL France</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: TOTAL France">Dono de Obra: TOTAL France</p>
+          <p class="card-desc" data-en="Expansion of an 18MW LNG-fuelled power plant with 4 Wärtsilä 34SG engines. Includes main pavilion, tanks, WWTP, auxiliary buildings, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Ampliação de central de 18MW a gás (GNL) com 4 motores Wärtsilä 34SG. Inclui
             pavilhão principal, reservatórios, ETAR, edifícios auxiliares, acessos e arranjos exteriores.
             Pavilhões em estrutura metálica com painel sandwich; reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">17,67M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">6.696m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">18MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Civil Supervisor</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">17,67M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">6.696m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">18MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Civil Supervisor</span></div>
           </div>
         </div>
       </div>
@@ -507,13 +512,13 @@
         </div>
         <div class="card-body">
           <p class="card-title">Central Térmica de Ressano Garcia (CTRG)</p>
-          <p class="card-location">Ressano Garcia, Moçambique &nbsp;|&nbsp; Abr 2013 - Jun 2014 <a href="https://maps.app.goo.gl/K4bMu4GYKgDdBMw96" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-location">Ressano Garcia, <span data-en="Mozambique">Moçambique</span> &nbsp;|&nbsp; <span data-en="Apr 2013 - Jun 2014">Abr 2013 - Jun 2014</span> <a href="https://maps.app.goo.gl/K4bMu4GYKgDdBMw96" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: SASOL Energy / EDM (Electricidade de Moçambique)</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: SASOL Energy / EDM (Electricidade de Moçambique)">Dono de Obra: SASOL Energy / EDM (Electricidade de Moçambique)</p>
+          <p class="card-desc" data-en="Construction of the largest gas-engine thermoelectric power plant in Africa, with 180MW and 18 Wärtsilä 34SG engines. Includes main pavilion, tanks, WWTP, electrical substation, gas booster station, pipeline, administrative and auxiliary buildings, access roads and external works. Steel-structure pavilions with sandwich panels; tanks on concrete bases with steel structures.">
             Construção da maior central termoelétrica a motores de gás de África, com 180MW e
             18 motores Wärtsilä 34SG. Inclui pavilhão principal, reservatórios, ETAR,
             subestação elétrica, estação sobrepressora de gás, gasoduto, edifícios administrativos
@@ -521,10 +526,10 @@
             Pavilhões em estrutura metálica com painel sandwich; reservatórios com base de betão e estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">204M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">90.000m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">180MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Civil Supervisor</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">204M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">90.000m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">180MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Civil Supervisor</span></div>
           </div>
         </div>
       </div>
@@ -546,22 +551,22 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Central Costanera - Instalação de Geradores</p>
-          <p class="card-location">Buenos Aires, Argentina &nbsp;|&nbsp; Set 2014 - Jun 2015 <a href="https://maps.app.goo.gl/2HkpoXWVhdnq5Ztv8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Costanera Power Plant - Generator Installation">Central Costanera - Instalação de Geradores</p>
+          <p class="card-location">Buenos Aires, Argentina &nbsp;|&nbsp; <span data-en="Sep 2014 - Jun 2015">Set 2014 - Jun 2015</span> <a href="https://maps.app.goo.gl/2HkpoXWVhdnq5Ztv8" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: Endesa Costanera S.A.</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: Endesa Costanera S.A.">Dono de Obra: Endesa Costanera S.A.</p>
+          <p class="card-desc" data-en="Supervision and support for design modifications for the installation of 4 Wärtsilä W20V32 engines in an existing reinforced concrete building, including structural modifications and construction of steel-structure auxiliary buildings.">
             Fiscalização e apoio a modificações de projeto para a instalação de 4 motores
             Wärtsilä W20V32 em edifício existente em betão armado, incluindo modificações
             estruturais e construção de edifícios auxiliares em estrutura metálica.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">12,71M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">500m²</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Construction Manager</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">12,71M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">500m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Construction Manager</span></div>
           </div>
         </div>
       </div>
@@ -587,24 +592,24 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Extensão da Central Diesel de Dakhla</p>
-          <p class="card-location">Dakhla, Marrocos &nbsp;|&nbsp; Jun 2015 - Mai 2016 <a href="https://maps.app.goo.gl/H1ijMu9xujRVM5tb6" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
+          <p class="card-title" data-en="Dakhla Diesel Power Plant Extension">Extensão da Central Diesel de Dakhla</p>
+          <p class="card-location">Dakhla, <span data-en="Morocco">Marrocos</span> &nbsp;|&nbsp; <span data-en="Jun 2015 - May 2016">Jun 2015 - Mai 2016</span> <a href="https://maps.app.goo.gl/H1ijMu9xujRVM5tb6" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
             <span class="pill pill-industrial">Industrial</span>
-            <span class="pill pill-struct">Betão Armado</span>
+            <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
           </div>
-          <p class="card-client">Dono de Obra: ONEE - Office National de l'Electricité et de l'Eau Potable</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: ONEE - Office National de l'Electricité et de l'Eau Potable">Dono de Obra: ONEE - Office National de l'Electricité et de l'Eau Potable</p>
+          <p class="card-desc" data-en="Extension of a 17MW gas and diesel power plant with 1 Wärtsilä 18V46 engine. Includes main pavilion, tank area, auxiliary buildings, access roads and external works. Industrial pavilion in reinforced concrete and masonry; tanks on concrete bases with steel structures; auxiliary buildings in reinforced concrete and masonry.">
             Extensão de central de 17MW a gás e diesel com 1 motor Wärtsilä 18V46. Inclui
             pavilhão principal, área de reservatórios, edifícios auxiliares, acessos e arranjos exteriores.
             Pavilhão industrial em betão armado e alvenaria; reservatórios com base de betão e estrutura metálica;
             edifícios auxiliares em betão armado e alvenaria.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">18,99M€</span></div>
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">29.700m²</span></div>
-            <div class="metric"><span class="metric-label">Potência</span><span class="metric-value">17MW</span></div>
-            <div class="metric"><span class="metric-label">Função</span><span class="metric-value">Construction Manager</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">18,99M€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">29.700m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Power">Potência</span><span class="metric-value">17MW</span></div>
+            <div class="metric"><span class="metric-label" data-en="Role">Função</span><span class="metric-value">Construction Manager</span></div>
           </div>
         </div>
       </div>
@@ -620,9 +625,9 @@
     <div class="employer-header">
       <h2>Bogas Construções S.A.</h2>
       <span class="employer-period">Jan 2007 - Jun 2008 &nbsp;|&nbsp; Carregal do Sal, Viseu</span>
-      <span class="employer-role">Diretor de Produção</span>
+      <span class="employer-role" data-en="Production Manager">Diretor de Produção</span>
     </div>
-    <p class="employer-intro">
+    <p class="employer-intro" data-en="Production management of housing developments: multi-family buildings and houses. Includes reinforced concrete structural design (CYPE) and preparation of Structural and Water Supply &amp; Sanitation specialty design projects. Works located mainly in the Carregal do Sal and Cabanas de Viriato (Viseu) area.">
       Direção de produção de obras de habitação: edifícios multifamiliares e moradias.
       Inclui dimensionamento de estruturas de betão armado (CYPE) e elaboração de projetos
       de especialidade de Estabilidade, Abastecimento de Água e Saneamento.
@@ -631,7 +636,7 @@
 
     <!-- Edifícios Multifamiliares -->
     <div class="sub-section">
-      <p class="sub-title">Edifícios Multifamiliares</p>
+      <p class="sub-title" data-en="Multi-family Buildings">Edifícios Multifamiliares</p>
       <div class="projects-grid">
 
         <div class="card">
@@ -654,16 +659,16 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Loteamento das Alagoas</p>
+            <p class="card-title" data-en="Alagoas Development">Loteamento das Alagoas</p>
             <p class="card-location">Carregal do Sal, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1356AHY1SmowuEzJJlMCJ9HcQ4FM&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
-              <span class="pill pill-struct">Habitação</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Housing">Habitação</span>
             </div>
-            <p class="card-desc">3 edifícios multifamiliares de 3 andares com 17 apartamentos. Estruturas em betão armado.</p>
+            <p class="card-desc" data-en="3 multi-family buildings with 3 floors and 17 apartments. Reinforced concrete structures.">3 edifícios multifamiliares de 3 andares com 17 apartamentos. Estruturas em betão armado.</p>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-label">Área Total</span><span class="metric-value">3.800m²</span></div>
-              <div class="metric"><span class="metric-label">Valor Comercial</span><span class="metric-value">2.550.000€</span></div>
+              <div class="metric"><span class="metric-label" data-en="Total Area">Área Total</span><span class="metric-value">3.800m²</span></div>
+              <div class="metric"><span class="metric-label" data-en="Commercial Value">Valor Comercial</span><span class="metric-value">2.550.000€</span></div>
             </div>
           </div>
         </div>
@@ -684,13 +689,13 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Urbanização Quinta do Zagão</p>
+            <p class="card-title" data-en="Quinta do Zagão Urban Development">Urbanização Quinta do Zagão</p>
             <p class="card-location">Carregal do Sal, Viseu</p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
-              <span class="pill pill-struct">Habitação</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Housing">Habitação</span>
             </div>
-            <p class="card-desc">
+            <p class="card-desc" data-en="Design project for an urban development with 46 apartments, 10 of which duplexes, ranging from 2 to 4-bedroom units with areas between 120m² and 300m².">
               Projeto para urbanização com 46 apartamentos, dos quais 10 duplex, de tipologias T2
               a T4 com áreas entre 120m² e 300m².
             </p>
@@ -702,7 +707,7 @@
 
     <!-- Loteamentos -->
     <div class="sub-section">
-      <p class="sub-title">Loteamentos de Moradias</p>
+      <p class="sub-title" data-en="Housing Plot Developments">Loteamentos de Moradias</p>
       <div class="projects-grid">
 
         <div class="card">
@@ -733,13 +738,13 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Loteamento da Quinta da Soila</p>
+            <p class="card-title" data-en="Quinta da Soila Development">Loteamento da Quinta da Soila</p>
             <p class="card-location">Cabanas de Viriato, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1w0A9mWyNm-eDftByWhvBeXkEj7YyWIQ&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
-              <span class="pill pill-struct">Habitação</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Housing">Habitação</span>
             </div>
-            <p class="card-desc">
+            <p class="card-desc" data-en="8 detached houses with areas between 210m² and 310m², and 5 semi-detached houses of around 210m² each. Total commercial value of €2,230,000.">
               8 moradias independentes com áreas entre os 210m² e 310m², e 5 moradias geminadas
               com cerca de 210m² cada. Valor comercial global de 2.230.000€.
             </p>
@@ -770,13 +775,13 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Loteamento da Quinta do Fojo</p>
+            <p class="card-title" data-en="Quinta do Fojo Development">Loteamento da Quinta do Fojo</p>
             <p class="card-location">Cabanas de Viriato, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1MSt-wa7nDFYjdKriNSpLDrJP0r14-2U&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
-              <span class="pill pill-struct">Habitação</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Housing">Habitação</span>
             </div>
-            <p class="card-desc">
+            <p class="card-desc" data-en="Construction of a 245m² house (value €160,000); Construction of a 150m² house (value €100,000); Design project for 2 semi-detached houses of 240m² each.">
               Construção de moradia com 245m² (valor 160.000€); Construção de moradia com 150m²
               (valor 100.000€); Projeto para 2 moradias geminadas com 240m² cada.
             </p>
@@ -809,13 +814,13 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Loteamento da Tapada</p>
+            <p class="card-title" data-en="Tapada Development">Loteamento da Tapada</p>
             <p class="card-location">Carregal do Sal, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1g2q4UmzugzXrQFAr_j3zBviunEwnSmw&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
-              <span class="pill pill-struct">Habitação</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Housing">Habitação</span>
             </div>
-            <p class="card-desc">
+            <p class="card-desc" data-en="Construction of 1 house of 380m² (value €180,000); Construction of 2 houses of around 290m² each (total value €200,000). Design project for 2 houses of 250m² each.">
               Construção de 1 moradia com 380m² (valor 180.000€); Construção de 2 moradias com
               cerca de 290m² cada (valor global 200.000€). Projeto para 2 moradias com 250m² cada.
             </p>
@@ -827,7 +832,7 @@
 
     <!-- Moradias Privadas -->
     <div class="sub-section">
-      <p class="sub-title">Moradias Privadas</p>
+      <p class="sub-title" data-en="Private Houses">Moradias Privadas</p>
       <div class="projects-grid">
 
         <div class="card">
@@ -850,14 +855,14 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Moradia de Eduardo Abrantes</p>
+            <p class="card-title" data-en="Eduardo Abrantes House">Moradia de Eduardo Abrantes</p>
             <p class="card-location">Carregal do Sal, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1io7R9uli8IK6siXx7xKPpIXo48ew46s&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-struct">Betão Armado</span>
+              <span class="pill pill-struct" data-en="Reinforced Concrete">Betão Armado</span>
             </div>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-label">Área</span><span class="metric-value">820m²</span></div>
-              <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">400.000€</span></div>
+              <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">820m²</span></div>
+              <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">400.000€</span></div>
             </div>
           </div>
         </div>
@@ -881,14 +886,14 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Moradia de José Vaz Serra - Reabilitação e Ampliação</p>
+            <p class="card-title" data-en="José Vaz Serra House - Refurbishment and Extension">Moradia de José Vaz Serra - Reabilitação e Ampliação</p>
             <p class="card-location">Currelos, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1PsSeJPZC4RDrPunSoV7kNbFG8KUEr30&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-rehab">Reabilitação</span>
+              <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
             </div>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-label">Área</span><span class="metric-value">440m²</span></div>
-              <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">120.000€</span></div>
+              <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">440m²</span></div>
+              <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">120.000€</span></div>
             </div>
           </div>
         </div>
@@ -909,14 +914,14 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Quinta da Roda - Projeto de Reabilitação e Ampliação</p>
+            <p class="card-title" data-en="Quinta da Roda - Refurbishment and Extension Project">Quinta da Roda - Projeto de Reabilitação e Ampliação</p>
             <p class="card-location">Carregal do Sal, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1dfALvvIRkJdkDnFMd5hbhVc3gYA6bI0&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-rehab">Reabilitação</span>
+              <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
             </div>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-label">Área</span><span class="metric-value">150m²</span></div>
-              <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">100.000€</span></div>
+              <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">150m²</span></div>
+              <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">100.000€</span></div>
             </div>
           </div>
         </div>
@@ -937,14 +942,14 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-title">Moradia de Mr. Walker - Reabilitação e Ampliação</p>
+            <p class="card-title" data-en="Mr. Walker House - Refurbishment and Extension">Moradia de Mr. Walker - Reabilitação e Ampliação</p>
             <p class="card-location">Oliveirinha, Viseu <a href="https://www.google.com/maps/d/u/0/edit?mid=1wBeGzCaqCfpUxRvG71ez5HbveDic4U4&amp;usp=sharing" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
             <div class="card-pills">
-              <span class="pill pill-rehab">Reabilitação</span>
+              <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
             </div>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-label">Área</span><span class="metric-value">110m²</span></div>
-              <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">85.000€</span></div>
+              <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">110m²</span></div>
+              <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">85.000€</span></div>
             </div>
           </div>
         </div>
@@ -960,8 +965,8 @@
   <section id="tricivil" class="employer-section">
     <div class="employer-header">
       <h2>Tricivil S.A.</h2>
-      <span class="employer-period">Jun 2006 - Dez 2006 &nbsp;|&nbsp; Beja</span>
-      <span class="employer-role">Diretor de Obra</span>
+      <span class="employer-period" data-en="Jun 2006 - Dec 2006 | Beja">Jun 2006 - Dez 2006 &nbsp;|&nbsp; Beja</span>
+      <span class="employer-role" data-en="Construction Manager">Diretor de Obra</span>
     </div>
 
     <div class="projects-grid">
@@ -980,21 +985,21 @@
           </div>
         </div>
         <div class="card-body">
-          <p class="card-title">Superfície Comercial - Cadeia PLUS</p>
+          <p class="card-title" data-en="PLUS Chain Retail Unit">Superfície Comercial - Cadeia PLUS</p>
           <p class="card-location">Beja, Portugal <a href="https://maps.app.goo.gl/rM9U4rSp4SXP8eUi7" target="_blank" rel="noopener noreferrer" class="map-link" title="Ver no mapa"><svg class="pin-icon" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></a></p>
           <div class="card-pills">
-            <span class="pill pill-struct">Betão Pré-fabricado</span>
-            <span class="pill pill-industrial">Comercial</span>
+            <span class="pill pill-struct" data-en="Precast Concrete">Betão Pré-fabricado</span>
+            <span class="pill pill-industrial" data-en="Commercial">Comercial</span>
           </div>
-          <p class="card-client">Dono de Obra: PLUS</p>
-          <p class="card-desc">
+          <p class="card-client" data-en="Client: PLUS">Dono de Obra: PLUS</p>
+          <p class="card-desc" data-en="Construction of a retail unit with supermarket, access roads and external works. Precast concrete structure with solid brick masonry. Includes 3 steel walkways. Currently converted into a Pingo Doce store.">
             Construção de superfície comercial com supermercado, acessos e arranjos exteriores.
             Estrutura em betão pré-fabricado com alvenaria de tijolo maciço.
             Inclui 3 passagens metálicas. Atualmente convertida em loja Pingo Doce.
           </p>
           <div class="card-metrics">
-            <div class="metric"><span class="metric-label">Área</span><span class="metric-value">1.500m²</span></div>
-            <div class="metric"><span class="metric-label">Valor</span><span class="metric-value">700.000€</span></div>
+            <div class="metric"><span class="metric-label" data-en="Area">Área</span><span class="metric-value">1.500m²</span></div>
+            <div class="metric"><span class="metric-label" data-en="Value">Valor</span><span class="metric-value">700.000€</span></div>
           </div>
         </div>
       </div>
@@ -1009,10 +1014,10 @@
   <section id="toporama" class="employer-section">
     <div class="employer-header">
       <h2>Toporama - Sociedade de Engenharia</h2>
-      <span class="employer-period">Mar 2005 - Ago 2005 &nbsp;|&nbsp; Coimbra</span>
-      <span class="employer-role">Medidor-Orçamentista / Técnico CAD</span>
+      <span class="employer-period" data-en="Mar 2005 - Aug 2005 | Coimbra">Mar 2005 - Ago 2005 &nbsp;|&nbsp; Coimbra</span>
+      <span class="employer-role" data-en="Quantity Surveyor / CAD Technician">Medidor-Orçamentista / Técnico CAD</span>
     </div>
-    <p class="employer-intro">
+    <p class="employer-intro" data-en="Preparation of budgets, bills of quantities and AutoCAD drawings for construction and refurbishment projects in the Coimbra and Condeixa area.">
       Elaboração de orçamentos, mapas de medições e desenhos AutoCAD para projetos de construção
       e reabilitação na zona de Coimbra e Condeixa.
     </p>
@@ -1021,35 +1026,35 @@
 
       <div class="card">
         <div class="card-body">
-          <p class="card-title">EB2/3 de Condeixa</p>
+          <p class="card-title" data-en="Condeixa Primary School (EB2/3)">EB2/3 de Condeixa</p>
           <p class="card-location">Condeixa-a-Nova, Coimbra</p>
           <div class="card-pills">
-            <span class="pill pill-struct">Desenho CAD</span>
+            <span class="pill pill-struct" data-en="CAD Drafting">Desenho CAD</span>
           </div>
-          <p class="card-desc">Elaboração de desenhos AutoCAD para escola básica.</p>
+          <p class="card-desc" data-en="Preparation of AutoCAD drawings for a primary school.">Elaboração de desenhos AutoCAD para escola básica.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <p class="card-title">Remodelações C.M. Condeixa</p>
+          <p class="card-title" data-en="Condeixa Municipal Council Refurbishments">Remodelações C.M. Condeixa</p>
           <p class="card-location">Condeixa-a-Nova, Coimbra</p>
           <div class="card-pills">
-            <span class="pill pill-rehab">Reabilitação</span>
-            <span class="pill pill-struct">Orçamentação</span>
+            <span class="pill pill-rehab" data-en="Refurbishment">Reabilitação</span>
+            <span class="pill pill-struct" data-en="Cost Estimating">Orçamentação</span>
           </div>
-          <p class="card-desc">Orçamentos, medições e desenhos AutoCAD para remodelações de diversos edifícios municipais.</p>
+          <p class="card-desc" data-en="Budgets, bills of quantities and AutoCAD drawings for refurbishments of various municipal buildings.">Orçamentos, medições e desenhos AutoCAD para remodelações de diversos edifícios municipais.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <p class="card-title">Ampliação Critical Software</p>
+          <p class="card-title" data-en="Critical Software Extension">Ampliação Critical Software</p>
           <p class="card-location">Taveiro, Coimbra</p>
           <div class="card-pills">
-            <span class="pill pill-struct">Orçamentação</span>
+            <span class="pill pill-struct" data-en="Cost Estimating">Orçamentação</span>
           </div>
-          <p class="card-desc">Elaboração de orçamento para ampliação das instalações da Critical Software.</p>
+          <p class="card-desc" data-en="Preparation of a budget for the extension of Critical Software's facilities.">Elaboração de orçamento para ampliação das instalações da Critical Software.</p>
         </div>
       </div>
 
@@ -1062,7 +1067,7 @@
      FOOTER
      ============================================================ -->
 <footer style="background:var(--navy);color:rgba(255,255,255,0.7);text-align:center;padding:28px 16px;font-size:0.85rem;">
-  <p>Tiago Correia &nbsp;|&nbsp; Engenheiro Civil &nbsp;|&nbsp; Membro da Ordem dos Engenheiros</p>
+  <p data-en="Tiago Correia | Civil Engineer | Member of the Portuguese Order of Engineers">Tiago Correia &nbsp;|&nbsp; Engenheiro Civil &nbsp;|&nbsp; Membro da Ordem dos Engenheiros</p>
   <p style="margin-top:6px;">
     <a href="mailto:correia.tiago@gmail.com" style="color:rgba(255,255,255,0.85);text-decoration:none;">correia.tiago@gmail.com</a>
     &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -1073,6 +1078,9 @@
 <script>
 function exportPDF() {
   var btn = document.querySelector('.print-btn');
+  var lang = document.documentElement.lang === 'en' ? 'en' : 'pt';
+  var loadingLabel = lang === 'en' ? '⏳ Loading…' : '⏳ A carregar…';
+  var doneLabel = lang === 'en' ? btn.dataset.en : btn.dataset.pt;
   var imgs = Array.from(document.querySelectorAll('img'));
   imgs.forEach(function(img) {
     if (img.getAttribute('loading') === 'lazy') {
@@ -1082,15 +1090,99 @@ function exportPDF() {
   });
   var pending = imgs.filter(function(img) { return !img.complete; });
   if (!pending.length) { window.print(); return; }
-  btn.textContent = '⏳ A carregar…';
+  btn.textContent = loadingLabel;
   btn.disabled = true;
   var remaining = pending.length;
   pending.forEach(function(img) {
-    function onDone() { if (!--remaining) { btn.textContent = '⬇ Exportar PDF'; btn.disabled = false; window.print(); } }
+    function onDone() { if (!--remaining) { btn.textContent = doneLabel; btn.disabled = false; window.print(); } }
     img.addEventListener('load', onDone, { once: true });
     img.addEventListener('error', onDone, { once: true });
   });
 }
+
+/* ============================================================
+   INTERNACIONALIZAÇÃO (PT / EN)
+   ============================================================ */
+var AUX_PT_EN = {
+  'Anterior': 'Previous',
+  'Seguinte': 'Next',
+  'Ver no mapa': 'View on map',
+  'Alçado principal': 'Front elevation',
+  'Alçado posterior': 'Rear elevation',
+  'Alçados Laterais': 'Side elevations',
+  'Planta do Andar': 'Floor plan'
+};
+var AUX_EN_PT = {};
+Object.keys(AUX_PT_EN).forEach(function(k) { AUX_EN_PT[AUX_PT_EN[k]] = k; });
+
+function translateAux(str, lang) {
+  if (lang === 'en') {
+    if (AUX_PT_EN[str]) return AUX_PT_EN[str];
+    var m = str.match(/^Imagem (\d+)$/); if (m) return 'Image ' + m[1];
+    var l = str.match(/^Lote (\d+)$/); if (l) return 'Plot ' + l[1];
+    return str;
+  }
+  if (AUX_EN_PT[str]) return AUX_EN_PT[str];
+  var m2 = str.match(/^Image (\d+)$/); if (m2) return 'Imagem ' + m2[1];
+  var l2 = str.match(/^Plot (\d+)$/); if (l2) return 'Lote ' + l2[1];
+  return str;
+}
+
+function initI18nStorage() {
+  document.querySelectorAll('[data-en]').forEach(function(el) {
+    if (!el.dataset.pt) el.dataset.pt = el.textContent;
+  });
+}
+
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-en]').forEach(function(el) {
+    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.pt;
+  });
+
+  document.querySelectorAll('.carousel-prev, .carousel-next, .carousel-dot').forEach(function(el) {
+    if (el.hasAttribute('aria-label')) el.setAttribute('aria-label', translateAux(el.getAttribute('aria-label'), lang));
+  });
+  document.querySelectorAll('.map-link[title]').forEach(function(el) {
+    el.setAttribute('title', translateAux(el.getAttribute('title'), lang));
+  });
+  document.querySelectorAll('.carousel-caption').forEach(function(el) {
+    el.textContent = translateAux(el.textContent, lang);
+  });
+
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.langBtn === lang);
+  });
+}
+
+function setLanguage(lang, remember) {
+  applyLanguage(lang);
+  if (remember) localStorage.setItem('portfolio-lang', lang);
+}
+
+function detectLanguage(callback) {
+  var stored = localStorage.getItem('portfolio-lang');
+  if (stored) { callback(stored); return; }
+
+  var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  if (browserLang.indexOf('pt') === 0) { callback('pt'); return; }
+
+  var done = false;
+  var finish = function(lang) { if (!done) { done = true; callback(lang); } };
+  var timeout = setTimeout(function() { finish('en'); }, 1500);
+
+  fetch('https://ipapi.co/json/').then(function(r) { return r.json(); }).then(function(data) {
+    clearTimeout(timeout);
+    finish(data && data.country_code === 'PT' ? 'pt' : 'en');
+  }).catch(function() {
+    clearTimeout(timeout);
+    finish('en');
+  });
+}
+
+initI18nStorage();
+detectLanguage(function(lang) { setLanguage(lang, false); });
 
 window.addEventListener('beforeprint', function() {
   document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
