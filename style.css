@@ -230,7 +230,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 16px 80px; }
 
 /* ---- SELETOR DE IDIOMA ---- */
 .lang-switch {
-  position: fixed; bottom: 28px; left: 28px;
+  position: fixed; top: 20px; right: 28px;
   display: flex; background: var(--navy); border-radius: 22px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.22); overflow: hidden;
   z-index: 100;
