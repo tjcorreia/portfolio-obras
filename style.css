@@ -305,7 +305,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 16px 80px; }
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  .stats-grid { grid-template-columns: repeat(5, 1fr); gap: 8px; }
+  .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
   .stat-value { font-size: 13pt; color: #1a2744 !important; }
   .stat-label { font-size: 6.5pt; }
 
