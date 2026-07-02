@@ -39,6 +39,13 @@ header {
   text-align: center;
 }
 .header-inner { max-width: 900px; margin: 0 auto; }
+.avatar {
+  width: 108px; height: 108px; border-radius: 50%;
+  object-fit: cover; object-position: center 20%;
+  border: 3px solid rgba(255,255,255,0.35);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  margin-bottom: 16px;
+}
 header h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.5px; }
 header .subtitle {
   font-size: 1.1rem; opacity: 0.85; margin-top: 6px; font-weight: 400;
@@ -276,6 +283,7 @@ main { max-width: 960px; margin: 0 auto; padding: 40px 16px 80px; }
     text-align: left;
   }
   .header-inner { max-width: 100%; }
+  .avatar { display: none; }
   header h1 { font-size: 18pt; color: #1a2744 !important; }
   header .subtitle { font-size: 10pt; color: #333 !important; opacity: 1; margin-top: 2px; }
   .header-badges {
